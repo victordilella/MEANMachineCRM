@@ -1,6 +1,7 @@
-var User     = require('../models/user');
-var jwt      = require('jsonwebtoken');
-var config   = require('../../config');
+var bodyParser = require('body-parser');
+var User       = require('../models/user');
+var jwt        = require('jsonwebtoken');
+var config     = require('../../config');
 
 // super secret for creating tokens
 var superSecret = config.secret
